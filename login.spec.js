@@ -7,7 +7,7 @@ test.only("First test case",async({page})=>{
   console.log(pageTitle);
   await expect(page).toHaveTitle('Demo Web Shop. Login')
 
-  console.log('Title Verified');
+  console.log('Title is Verified');
 
   await page.locator("#Email").fill("deepthyravi17@gmail.com")
 
