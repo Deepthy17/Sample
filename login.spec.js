@@ -1,13 +1,13 @@
 import {test,expect} from '@playwright/test'
 
 test.only("First test case",async({page})=>{
-  
+
   await page.goto('https://demowebshop.tricentis.com/login')
   const pageTitle =await page.title();
   console.log(pageTitle);
   await expect(page).toHaveTitle('Demo Web Shop. Login')
 
-  console.log('Title is Verified');
+  console.log('Title Verified');
 
   await page.locator("#Email").fill("deepthyravi17@gmail.com")
 
