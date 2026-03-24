@@ -8,5 +8,6 @@ test('First test case', async({page})=>{
 
   console.log('Title. Verified');
   await page.close();
+  await page.pause();
 
 })
